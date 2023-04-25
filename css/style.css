@@ -1,1 +1,213 @@
 /* main css file */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+:root{
+    --black:#031923;
+    --yellow:#E5BB33;
+    --blue:#205B75;
+    --white:#FFFFFF;
+}
+body{
+    font-family: "Open Sans","Arial",sans-serif;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--black);
+}
+h1,h2,h3{
+    font-family: "Montserrat","Arial",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+h1{ 
+    font-size: 60px;
+    line-height: 110%;
+}
+h2{
+    width: 1240px;
+    font-size: 30px;
+    line-height: 120%;
+}
+p{
+    width: 800px;
+}
+button{
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform:lowercase;
+    padding: 6px 10px 10px;
+    gap: 10px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    color: var(--blue);
+    background-color: var(--white);
+}
+button:hover{
+    color: var(--white);
+    background-color: var(--blue);
+}
+.avatar{
+    border-radius: 50%;
+}
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.contacts-link{
+    padding: 30px 30px 30px 42px;
+    display: block;
+    padding-left: 42px;
+    background-repeat: no-repeat;
+    background-position:0%;
+}
+.contacts li {
+    display: inline-block;
+    margin: 0;
+}
+.contacts a{
+    text-decoration: none;
+    color: var(--black);
+}
+.contacts a:hover{
+    color: var(--blue);
+}
+.contacts-link_email{
+    background-image: url("../img/icon/email.svg");
+}
+.contacts-link_telephone{
+    background-image: url("../img/icon/phone.svg");
+}
+.main-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    padding: 10px 15px;
+    gap: 10px;
+}
+.main-nav a:hover{
+    color: var(--blue);
+}
+.main-footer{
+    color:var(--white);
+    background-color: var(--blue);
+}
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 1px solid var(--black);
+    border-radius: 5e+07px;
+    background-color:var(--white);
+    background-repeat: no-repeat;
+    background-position:50%;
+}
+.social-link:hover{
+    background-color: var(--yellow);
+}
+.social-link_github{
+    background-image: url("../img/social/github.svg");
+}
+.social-link_telegram{
+    background-image: url("../img/social/telegram.svg");
+}
+.social-link_vk{
+    background-image: url("../img/social/vk.svg");
+}
+.subtitle{
+
+    font-size: 38px;
+    line-height: 120%;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container{
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+
+.skill-level {
+    margin: 4px 0 16px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--blue);
+    border-radius: 16px;
+}
+
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--yellow);
+    border-radius: 8px;
+}
+
+
+.skill-item {
+    text-transform: uppercase;
+}
+
+
+.skill-item_html {
+    background-image: url("../img/skill/html.svg");
+}
+
+
+.skill-item_css {
+    background-image: url("../img/skill/css.svg");
+}
+
+.skill-item_python {
+    background-image: url("../img/skill/python.svg");
+}
+
+.skill-item_photoshop {
+    background-image: url("../img/skill/photoshop.svg");
+}
+.skill-item_php {
+    background-image: url("../img/skill/php.svg");
+}
