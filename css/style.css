@@ -29,17 +29,13 @@ h1{
     line-height: 110%;
 }
 h2{
-    width: 1240px;
     font-size: 30px;
     line-height: 120%;
-}
-p{
-    width: 800px;
 }
 button{
     padding: 0;
     border: none;
-    color: inherit;
+    color: transparent;
     background-color: transparent;
     cursor: pointer;
     text-transform:lowercase;
@@ -115,7 +111,7 @@ button:hover{
     height: 50px;
     display: block;
     border: 1px solid var(--black);
-    border-radius: 5e+07px;
+    border-radius: 50%;
     background-color:var(--white);
     background-repeat: no-repeat;
     background-position:50%;
@@ -185,9 +181,8 @@ button:hover{
     border-radius: 8px;
 }
 
-
 .skill-item {
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 
