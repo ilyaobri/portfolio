@@ -1,4 +1,20 @@
 /* main css file */
+@font-face {
+    font-family: "Montserrat"; 
+    src: local("Montserrat"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff") format("woff"); 
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans"; 
+    src: local("Open Sans"),
+        url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff"); 
+    font-weight: 400;
+    font-style: normal;
+}
 *,
 *::before,
 *::after{
@@ -12,17 +28,12 @@
 }
 body{
     font-family: "Open Sans","Arial",sans-serif;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     color: var(--black);
 }
 h1,h2,h3{
     font-family: "Montserrat","Arial",sans-serif;
-    font-style: normal;
-    font-weight: 700;
 }
 h1{ 
     font-size: 60px;
@@ -155,8 +166,6 @@ button:hover{
     padding: 0;
     line-height: 1;
 }
-
-
 .skill-list dt {
     margin-bottom: 6px;
     padding: 5px 0 5px 38px;
@@ -164,8 +173,6 @@ button:hover{
     background-repeat: no-repeat;
     background-size: 30px;
 }
-
-
 .skill-level {
     margin: 4px 0 16px;
     padding: 2px;
@@ -173,32 +180,23 @@ button:hover{
     border: 1px solid var(--blue);
     border-radius: 16px;
 }
-
-
 .skill-level div {
     height: 14px;
     background-color: var(--yellow);
     border-radius: 8px;
 }
-
 .skill-item {
     text-transform: lowercase;
 }
-
-
 .skill-item_html {
     background-image: url("../img/skill/html.svg");
 }
-
-
 .skill-item_css {
     background-image: url("../img/skill/css.svg");
 }
-
 .skill-item_python {
     background-image: url("../img/skill/python.svg");
 }
-
 .skill-item_photoshop {
     background-image: url("../img/skill/photoshop.svg");
 }
