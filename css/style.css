@@ -19,7 +19,6 @@
 *::before,
 *::after{
     box-sizing: border-box;
-    transition: 0.7s;
 }
 :root{
     --black:#031923;
@@ -60,6 +59,7 @@ button{
     color: var(--blue);
     background-color: var(--white);
     line-height: 100%;
+    transition: 0.7s;
 }
 button:hover{
     color: var(--white);
@@ -140,6 +140,7 @@ section, .main-header{
 .contacts a{
     text-decoration: none;
     color: var(--black);
+    transition: 0.7s;
 }
 .contacts a:hover{
     color: var(--blue);
@@ -161,6 +162,7 @@ section, .main-header{
     padding: 10px 15px;
     line-height: 100%;
     gap:10px;
+    transition: 0.7s;
 }
 .main-nav a:hover{
     color: var(--blue);
@@ -186,6 +188,7 @@ section, .main-header{
     background-color:var(--white);
     background-repeat: no-repeat;
     background-position:50%;
+    transition: 0.7s;
 }
 .social-link:hover{
     background-color: var(--yellow);
