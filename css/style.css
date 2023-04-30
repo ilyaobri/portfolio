@@ -19,6 +19,7 @@
 *::before,
 *::after{
     box-sizing: border-box;
+    transition: 0.7s;
 }
 :root{
     --black:#031923;
@@ -56,6 +57,7 @@ button{
     border-radius: 8px;
     color: var(--blue);
     background-color: var(--white);
+    
 }
 button:hover{
     color: var(--white);
@@ -64,7 +66,7 @@ button:hover{
 .avatar{
     border-radius: 50%;
 }
-.contacts {
+.contacts, .social{
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -86,6 +88,7 @@ button:hover{
 }
 .contacts a:hover{
     color: var(--blue);
+    font-size: 105%;
 }
 .contacts-link_email{
     background-image: url("../img/icon/email.svg");
@@ -102,15 +105,11 @@ button:hover{
 }
 .main-nav a:hover{
     color: var(--blue);
+    font-size: 105%;
 }
 .main-footer{
     color:var(--white);
     background-color: var(--blue);
-}
-.social {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }
 .social li {
     display: inline-block;
