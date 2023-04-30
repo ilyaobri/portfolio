@@ -37,12 +37,14 @@ h1,h2,h3{
     font-family: "Montserrat","Arial",sans-serif;
 }
 h1{ 
+    margin: 0px 0px 20px;
     font-size: 60px;
     line-height: 110%;
 }
 h2{
     font-size: 30px;
     line-height: 120%;
+    margin: 0px 0px 40px;
 }
 button{
     padding: 0;
@@ -57,22 +59,75 @@ button{
     border-radius: 8px;
     color: var(--blue);
     background-color: var(--white);
-    
+    line-height: 100%;
 }
 button:hover{
     color: var(--white);
     background-color: var(--blue);
 }
+p{
+    margin: 0px 0px 15px;
+}
+p:last-child{
+    margin-bottom: 0;
+}
+section, .main-header{
+    margin-bottom: 120px;
+}
 .avatar{
     border-radius: 50%;
 }
-.contacts, .social{
+.main-header,.main-nav, .intro, .skill-header,.connection, .social{
+    display: flex;
+    align-items: center;
+}
+.skill-header{
+    justify-content: space-between;
+    margin: 0px 0px 40px;
+}
+.skill-buttons{
+    line-height: 100%;
+    align-items: center;
+    display: flex;
+    gap:20px;
+}
+.skills h2{
+    margin: 0px;
+}
+.main-header{
+    padding-top: 60px;
+    gap: 40px;
+}
+.intro{
+    justify-content: flex-start;
+    gap: 70px;
+}
+.intro p{
+    margin: 0px;
+    color: var(--blue);
+}
+.intro div{
+    flex-direction: column;
+}
+.text-wrapper{
+    max-width: 800px;
+}
+.connection, .social{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+.connection{
+    gap:40px;
+    margin-bottom: 40px;
+}
+.social{
+    gap: 20px;
+}
+.contacts{
+    flex-direction: column;
+}
 .contacts-link{
-    padding: 30px 30px 30px 42px;
     display: block;
     padding-left: 42px;
     background-repeat: no-repeat;
@@ -96,12 +151,16 @@ button:hover{
 .contacts-link_telephone{
     background-image: url("../img/icon/phone.svg");
 }
+.main-header a{
+    padding: 0px;
+    margin: 0px;
+}
 .main-nav a{
-    display: inline-block;
     text-decoration: none;
     color: var(--black);
     padding: 10px 15px;
-    gap: 10px;
+    line-height: 100%;
+    gap:10px;
 }
 .main-nav a:hover{
     color: var(--blue);
@@ -110,6 +169,8 @@ button:hover{
 .main-footer{
     color:var(--white);
     background-color: var(--blue);
+    justify-content: center;
+    padding: 50px 0px;
 }
 .social li {
     display: inline-block;
@@ -173,7 +234,7 @@ button:hover{
     background-size: 30px;
 }
 .skill-level {
-    margin: 4px 0 16px;
+    margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
     border: 1px solid var(--blue);

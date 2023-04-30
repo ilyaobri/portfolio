@@ -14,7 +14,7 @@
 <body>
     <div class="container">
     <header class="main-header">
-        <a href="index.html"><img src="img/main-logo.svg" alt="Логотип" width="60" height="60"></a>
+        <img src="img/main-logo.svg" alt="Логотип" width="60" height="60">
         <nav class="main-nav">
             <a href="#about_me">Обо мне</a>
             <a href="#skills">Навыки</a>
@@ -25,22 +25,24 @@
     <main>
         <section class="intro">
             <img class="avatar" src="img/user-photo.jpg" width="300" height="300" alt="Фото студента">
-            <h1>Комлев Илья</h1>
-            <p class="subtitle">Программист</p>
+            <div><h1>Комлев Илья</h1>
+            <p class="subtitle">Программист</p></div>
         </section>
         <section id="about_me" class="about_me">
             <h2>Пара слов обо мне</h2>
-            <p>Привет ✌</p>
-            <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
-            по направлению «Информатика и вычисли­тельная техника».</p>
-            <p>В прошлом году защитил диплом бакалавра на тему «Разработка устройства визуализации спектра звукового сигналала». Работа была высоко оценена комиссией.</p>
-            <p>Также я уже работаю сетевым инженером в городе Фрязино, но в будущем планирую стать разработчиком сложных программных комплексов и систем.</p>
+            <div class="text-wrapper"><p>Привет ✌</p>
+                <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
+                по направлению «Информатика и вычисли­тельная техника».</p>
+                <p>В прошлом году защитил диплом бакалавра на тему «Разработка устройства визуализации спектра звукового сигналала». Работа была высоко оценена комиссией.</p>
+                <p>Также я уже работаю сетевым инженером в городе Фрязино, но в будущем планирую стать разработчиком сложных программных комплексов и систем.</p>
+            </div>
         </section>
         <section id="skills" class="skills">
-            <h2>Мои навыки</h2>
-            <div>Сортировать
-                <button>по названию</button>
-                <button>по уровню</button>
+            <div class="skill-header"><h2>Мои навыки</h2>
+                <div class="skill-buttons">Сортировать
+                    <button>по названию</button>
+                    <button>по уровню</button>
+                </div>
             </div>
             <dl class="skill-list">
                 <dt class="skill-item skill-item_html">html</dt>
@@ -67,14 +69,15 @@
         </section>
         <section id="interests" class="interests">
             <h2>Мои интересы</h2>
-            <p>Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
-            <p>Но помимо учёбы и работы я также люблю играть в игры, смотреть фильмы и читать фантастику.</p>
+            <div class="text-wrapper"><p>Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
+                <p>Но помимо учёбы и работы я также люблю играть в игры, смотреть фильмы и читать фантастику.</p>
+            </div>
         </section>
         <section id="contacts" class="contacts">
             <h2>Мои контакты</h2>
-            <ul class="contacts">
-                <li class="contacts-link contacts-link_email"><a href="mailto:iekoml@mail.ru">iekoml@mail.ru</a></li>
+            <ul class="connection">
                 <li class="contacts-link contacts-link_telephone"><a href="tel:+79260824032">+7 926 082-40-32</a></li>
+                <li class="contacts-link contacts-link_email"><a href="mailto:iekoml@mail.ru">iekoml@mail.ru</a></li>
             </ul>
             <ul class="social">
                 <li class="social-link social-link_github"><a href=""><span class="visually-hidden">git</span></a></li>
