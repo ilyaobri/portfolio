@@ -36,14 +36,14 @@ h1,h2,h3{
     font-family: "Montserrat","Arial",sans-serif;
 }
 h1{ 
-    margin: 0px 0px 20px;
+    margin: 0 0 20px;
     font-size: 60px;
     line-height: 110%;
 }
 h2{
     font-size: 30px;
     line-height: 120%;
-    margin: 0px 0px 40px;
+    margin: 0 0 40px;
 }
 button{
     padding: 0;
@@ -66,7 +66,7 @@ button:hover{
     background-color: var(--blue);
 }
 p{
-    margin: 0px 0px 15px;
+    margin: 0 0 15px;
 }
 p:last-child{
     margin-bottom: 0;
@@ -83,7 +83,8 @@ section, .main-header{
 }
 .skill-header{
     justify-content: space-between;
-    margin: 0px 0px 40px;
+    margin: 0 0 40px;
+    gap:40px;
 }
 .skill-buttons{
     line-height: 100%;
@@ -92,7 +93,7 @@ section, .main-header{
     gap:20px;
 }
 .skill h2{
-    margin: 0px;
+    margin: 0;
 }
 .main-header{
     padding-top: 60px;
@@ -103,11 +104,8 @@ section, .main-header{
     gap: 70px;
 }
 .intro p{
-    margin: 0px;
+    margin: 0;
     color: var(--blue);
-}
-.intro div{
-    flex-direction: column;
 }
 .text-wrapper{
     max-width: 800px;
@@ -124,14 +122,11 @@ section, .main-header{
 .social{
     gap: 20px;
 }
-.contacts{
-    flex-direction: column;
-}
 .contacts-link{
     display: block;
     padding-left: 42px;
     background-repeat: no-repeat;
-    background-position:0%;
+    background-position:0;
 }
 .contacts li {
     display: inline-block;
@@ -153,8 +148,8 @@ section, .main-header{
     background-image: url("../img/icon/phone.svg");
 }
 .main-header a{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 .main-nav a{
     text-decoration: none;
@@ -172,7 +167,7 @@ section, .main-header{
     color:var(--white);
     background-color: var(--blue);
     justify-content: center;
-    padding: 50px 0px;
+    padding: 50px 0;
 }
 .social li {
     display: inline-block;
