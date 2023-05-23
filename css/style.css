@@ -85,6 +85,9 @@ section, .main-header{
 header button{
     border: 0;
 }
+.main-logo{
+    display: block;
+}
 .main-header,.main-nav, .intro, .skill-header,.connection, .social{
     display: flex;
     align-items: center;
@@ -288,12 +291,18 @@ header button{
     body {
         font-size: 16px;
     }
-    section{
+    section, .main-header{
         margin-bottom: 80px;
+    }
+    .intro {
+        gap: 50px;
     }
     .avatar{
         width: 250px;
         height: 250px;
+    }
+    .contacts-link{
+        padding: 8px 0 8px 42px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -304,6 +313,7 @@ header button{
 @media screen and (max-width: 650px) {
     h1{
         font-size: 32px;
+        margin-bottom: 10px;
     }
     h2{
         font-size: 20px;
@@ -322,14 +332,11 @@ header button{
         font-size: 14px;
     }
     .avatar{
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
     }
     .connection{
-        margin-bottom: 30px;
-    }
-    .contacts-link{
-        padding: 8px 0 8px 42px;
+        margin-bottom: 20px;
     }
     .nav-btn{
         display: block;
@@ -347,8 +354,8 @@ header button{
         flex-direction: column;
     }
     .main-header{
-        padding: 20px 0px 0px;
-        margin: 0px;
+        padding: 20px 0 0;
+        margin: 0;
         gap: 20px;
     }
     .main-nav a{
@@ -375,10 +382,7 @@ header button{
         margin-bottom: 30px;
     }
     .main-footer{
-        padding: 30px 20px;
-    }
-    .main-footer .container{
-        padding: 0;
+        padding: 30px 0;
     }
 }
 @media screen and (max-width: 380px) {
@@ -412,12 +416,12 @@ header button{
         gap: 10px;
     }
     .connection{
-        gap: 15px;
+        gap: 5px;
         margin-bottom: 20px;
     }
     .social{
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
     }
     section{
         margin-bottom: 50px;
