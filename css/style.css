@@ -54,7 +54,7 @@ button{
     text-transform:lowercase;
     padding: 6px 10px 10px;
     gap: 10px;
-    border: 0px solid var(--blue);
+    border: 1px solid var(--blue);
     border-radius: 8px;
     color: var(--blue);
     background-color: var(--white);
