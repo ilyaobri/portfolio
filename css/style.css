@@ -77,10 +77,10 @@ section, .main-header{
 .avatar{
     border-radius: 50%;
 }
-.nav-btn button{
+.nav-btn{
     display: none;
 }
-.main-header-wrap button{
+.main-header-wrap{
     border: none;
 }
 .main-header,.main-nav, .intro, .skill-header,.connection, .social{
