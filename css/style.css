@@ -72,10 +72,12 @@ p:last-child{
     margin-bottom: 0;
 }
 section, .main-header{
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 .avatar{
     border-radius: 50%;
+    width: 300px;
+    height: 300px;
 }
 .nav-btn{
     display: none;
@@ -289,6 +291,10 @@ header button{
     section{
         margin-bottom: 80px;
     }
+    .avatar{
+        width: 250px;
+        height: 250px;
+    }
 }
 @media screen and (max-width: 768px) {
     section{
@@ -316,8 +322,8 @@ header button{
         font-size: 14px;
     }
     .avatar{
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
     }
     .connection{
         margin-bottom: 30px;
