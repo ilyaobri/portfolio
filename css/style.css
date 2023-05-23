@@ -80,7 +80,7 @@ section, .main-header{
 .nav-btn{
     display: none;
 }
-.main-header-wrap{
+.nav-btn, .nav-btn_close{
     border: none;
 }
 .main-header,.main-nav, .intro, .skill-header,.connection, .social{
