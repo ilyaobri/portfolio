@@ -79,7 +79,9 @@ section, .main-header{
 }
 .nav-btn button{
     display: none;
-    border: 0;
+}
+.main-header-wrap button{
+    border: none;
 }
 .main-header,.main-nav, .intro, .skill-header,.connection, .social{
     display: flex;
