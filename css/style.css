@@ -66,11 +66,11 @@ button{
     line-height: 100%;
     transition: 0.7s;
 }
-.dark-theme button{
+.dark-theme .skill-buttons button{
     color: var(--black);
     border: 1px solid var(--black);
 }
-.dark-theme button:hover{
+.dark-theme .skill-buttons button:hover{
     color: var(--blue);
     background-color: var(--black);
 }
@@ -94,6 +94,10 @@ section, .main-header{
 }
 .nav-btn{
     display: none;
+
+}
+.nav-btn:hover {
+    background-color: transparent;
 }
 header button{
     border: 0;
@@ -368,9 +372,11 @@ header button{
     }
     .nav-btn_close{
         background-image: url(../img/menu/close.svg);
+        border: 0;
     }
     .nav-btn_open{
         background-image: url(../img/menu/burger.svg);
+        border: 0;
     }
     .main-header,  .main-nav{
         flex-direction: column;
@@ -383,6 +389,9 @@ header button{
     .main-nav a{
         padding: 20px 30px;
         text-align: center;
+    }
+    .main-nav_closed{
+        display: none;
     }
     .main-header img{
         width: 40px;
