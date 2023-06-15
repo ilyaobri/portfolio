@@ -108,11 +108,11 @@ checkbox.addEventListener("change", (e) => {
     changeTheme(checkbox.checked);
 });
 
-const darkThemeOnLoad = localStorage.getItem('dark-theme-disabled');
-if (darkThemeOnLoad === null) {
+const darkTheme = localStorage.getItem('dark-theme-disabled');
+if (darkTheme === null) {
     changeTheme(false);
     checkbox.checked = false;
 } else {
-    changeTheme(darkThemeOnLoad === "true");
-    checkbox.checked = (darkThemeOnLoad === "true");
+    changeTheme(darkTheme === "true");
+    checkbox.checked = (darkTheme === "true");
 }
