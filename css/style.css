@@ -260,21 +260,6 @@ header button{
 .skill-item {
     text-transform: lowercase;
 }
-.skill-item_html {
-    background-image: url("../img/skill/html.svg");
-}
-.skill-item_css {
-    background-image: url("../img/skill/css.svg");
-}
-.skill-item_python {
-    background-image: url("../img/skill/python.svg");
-}
-.skill-item_photoshop {
-    background-image: url("../img/skill/photoshop.svg");
-}
-.skill-item_php {
-    background-image: url("../img/skill/php.svg");
-}
 @media screen and (max-width: 1024px) {
     h1{
         font-size: 50px;
