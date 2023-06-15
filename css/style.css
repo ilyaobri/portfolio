@@ -95,7 +95,6 @@ section, .main-header{
 }
 .nav-btn{
     display: none;
-
 }
 .nav-btn:hover {
     background-color: transparent;
@@ -253,6 +252,7 @@ header button{
 .subtitle{
     font-size: 38px;
     line-height: 120%;
+    transition: 0.7s;
 }
 .dark-theme .subtitle{
     color: var(--yellow);
