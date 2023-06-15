@@ -26,11 +26,16 @@
     --blue:#205B75;
     --white:#FFFFFF;
 }
+.dark-theme {
+    --black: #CCCCCC;
+    --white: #031923;
+}
 body{
     font-family: "Open Sans","Arial",sans-serif;
     font-size: 20px;
     line-height: 150%;
     color: var(--black);
+    background-color: var(--white);
 }
 h1,h2,h3{
     font-family: "Montserrat","Arial",sans-serif;
@@ -60,6 +65,14 @@ button{
     background-color: var(--white);
     line-height: 100%;
     transition: 0.7s;
+}
+.dark-theme button{
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+.dark-theme button:hover{
+    color: var(--blue);
+    background-color: var(--black);
 }
 button:hover{
     color: var(--white);
@@ -155,11 +168,21 @@ header button{
     color: var(--blue);
     font-size: 105%;
 }
+.dark-theme .contacts a:hover{
+    color: var(--yellow);
+    font-size: 105%;
+}
 .contacts-link_email{
     background-image: url("../img/icon/email.svg");
 }
+.dark-theme .contacts-link_email{
+    background-image: url("../img/icon/email-dark.svg");
+}
 .contacts-link_telephone{
     background-image: url("../img/icon/phone.svg");
+}
+.dark-theme .contacts-link_telephone{
+    background-image: url("../img/icon/phone-dark.svg");
 }
 .main-header a{
     padding: 0;
@@ -177,11 +200,19 @@ header button{
     color: var(--blue);
     font-size: 105%;
 }
+.dark-theme .main-nav a:hover{
+    color: var(--yellow);
+}
 .main-footer{
     color:var(--white);
     background-color: var(--blue);
     justify-content: center;
     padding: 50px 0;
+}
+.dark-theme .main-footer {
+    border-top: var(--yellow) 1px solid;
+    color: var(--black);
+    background-color: var(--white);
 }
 .social li {
     display: inline-block;
@@ -199,6 +230,9 @@ header button{
     background-position:50%;
     transition: 0.7s;
 }
+.dark-theme .social-link{
+    background-color: var(--black);
+}
 .social-link:hover{
     background-color: var(--yellow);
 }
@@ -214,6 +248,9 @@ header button{
 .subtitle{
     font-size: 38px;
     line-height: 120%;
+}
+.dark-theme .subtitle{
+    color: var(--yellow);
 }
 .visually-hidden {
     position: absolute;
