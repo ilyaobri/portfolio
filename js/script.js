@@ -95,3 +95,15 @@ btn.addEventListener('click', (e) => {
     e.target.classList.contains('nav-btn_open') ? menu.open() : menu.close();
 });
 menu.close();
+
+const changeTheme = (theme) => {
+    theme
+      ? document.body.classList.remove('dark-theme')
+      : document.body.classList.add('dark-theme');
+    localStorage.setItem('dark-theme-disabled', theme);
+}
+
+const checkbox = document.querySelector(".switch-checkbox");
+checkbox.addEventListener("change", (e) => {
+    changeTheme(checkbox.checked);
+});
