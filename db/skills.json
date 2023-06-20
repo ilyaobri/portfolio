@@ -1,0 +1,25 @@
+[{
+    "item": "html",
+    "level": 80,
+    "iconPath": "img/skill/html.svg"
+},
+{   
+    "item": "css",
+    "level": 70,
+    "iconPath": "img/skill/css.svg"
+},
+{
+    "item": "python",
+    "level": 60,
+    "iconPath": "img/skill/python.svg"
+},
+{
+    "item": "photoshop",
+    "level": 50,
+    "iconPath": "img/skill/photoshop.svg"
+},
+{
+    "item": "php",
+    "level": 40,
+    "iconPath": "img/skill/php.svg"
+}]

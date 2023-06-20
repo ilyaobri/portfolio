@@ -1,30 +1,25 @@
 const skills = {
-    data: [{
-        item: 'html',
-        level: 80,
-        iconPath: 'img/skill/html.svg'
-    },
-    {   
-        item: 'css',
-        level: 70,
-        iconPath: 'img/skill/css.svg'
-    },
-    {
-        item: 'python',
-        level: 60,
-        iconPath: 'img/skill/python.svg'
-    },
-    {
-        item: 'photoshop',
-        level: 50,
-        iconPath: 'img/skill/photoshop.svg'
-    },
-    {
-        item: 'php',
-        level: 40,
-        iconPath: 'img/skill/php.svg'
-    }],
+    data: [],
     isSorted: false,
+    isInErrorState: false,
+    jsonPath: '',
+    skillListSelector: null,
+    sectionSkillsSelector: null,
+    initList: function(jsonPath, skillListSelector, sectionSkillsSelector) {
+        this.jsonPath = jsonPath;
+        this.skillListSelector = skillListSelector;
+        this.sectionSkillsSelector = sectionSkillsSelector;
+        fetch(jsonPath)
+            .then(data => data.json())
+            .then(object => {
+                this.data = object;
+                this.generateList(skillListSelector);
+            })
+            .catch(() => {
+                console.error('Что-то пошло не так');
+                sectionSkillsSelector.remove();
+            });
+    },
     generateList: function(parentElement) {
         parentElement.innerHTML = '';
         this.data.forEach(element => {
@@ -88,6 +83,10 @@ const menu = {
         btn.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
     },
 };
+
+const skillListSelector = document.querySelector('dl.skill-list');
+const sectionSkillsSelector = document.querySelector('section.skill');
+skills.initList('db/skills.json', skillListSelector, sectionSkillsSelector);
 
 const nav = document.querySelector('.main-nav');
 const btn = document.querySelector('.nav-btn');
