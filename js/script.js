@@ -1,23 +1,22 @@
 const skills = {
     data: [],
     isSorted: false,
-    isInErrorState: false,
     jsonPath: '',
-    skillListSelector: null,
-    sectionSkillsSelector: null,
-    initList: function(jsonPath, skillListSelector, sectionSkillsSelector) {
+    skillList: null,
+    skillSection: null,
+    initList: function(jsonPath, skillList, skillSection) {
         this.jsonPath = jsonPath;
-        this.skillListSelector = skillListSelector;
-        this.sectionSkillsSelector = sectionSkillsSelector;
+        this.skillList = skillList;
+        this.skillSection = skillSection;
         fetch(jsonPath)
             .then(data => data.json())
             .then(object => {
                 this.data = object;
-                this.generateList(skillListSelector);
+                this.generateList(skillList);
             })
             .catch(() => {
                 console.error('Что-то пошло не так');
-                sectionSkillsSelector.remove();
+                skillSection.remove();
             });
     },
     generateList: function(parentElement) {
@@ -59,9 +58,6 @@ const skills = {
     },
 };
 
-const skillList = document.querySelector('dl.skill-list');
-skills.generateList(skillList);
-
 const sortBtnsBlock = document.querySelector('.skill-buttons');
 sortBtnsBlock.addEventListener('click', (e) => {
     if (e.target.nodeName === "BUTTON") {
@@ -84,9 +80,9 @@ const menu = {
     },
 };
 
-const skillListSelector = document.querySelector('dl.skill-list');
-const sectionSkillsSelector = document.querySelector('section.skill');
-skills.initList('db/skills.json', skillListSelector, sectionSkillsSelector);
+const skillList = document.querySelector('dl.skill-list');
+const skilSection = document.querySelector('section.skill');
+skills.initList('db/skills.json', skillList, skillSection);
 
 const nav = document.querySelector('.main-nav');
 const btn = document.querySelector('.nav-btn');
