@@ -58,6 +58,17 @@ const skills = {
     },
 };
 
+const skillListSelector = document.querySelector('dl.skill-list');
+const skillSectionSelector = document.querySelector('section.skill');
+skills.initList('db/skills.json', skillListSelector, skillSectionSelector);
+
+const sortBtnsBlock = document.querySelector('.skill-buttons');
+sortBtnsBlock.addEventListener('click', (e) => {
+    if (e.target.nodeName === "BUTTON") {
+        skills.sortList(e.target.dataset.type);
+    }
+});
+
 const menu = {
     open: function() {
         nav.classList.remove('main-nav_closed');
@@ -72,17 +83,6 @@ const menu = {
         btn.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
     },
 };
-
-const skillListSelector = document.querySelector('dl.skill-list');
-const skillSectionSelector = document.querySelector('section.skill');
-skills.initList('db/skills.json', skillListSelector, skillSectionSelector);
-
-const sortBtnsBlock = document.querySelector('.skill-buttons');
-sortBtnsBlock.addEventListener('click', (e) => {
-    if (e.target.nodeName === "BUTTON") {
-        skills.sortList(e.target.dataset.type);
-    }
-});
 
 const nav = document.querySelector('.main-nav');
 const btn = document.querySelector('.nav-btn');
