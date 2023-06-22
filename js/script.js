@@ -80,9 +80,9 @@ const menu = {
     },
 };
 
-const skillList = document.querySelector('dl.skill-list');
-const skilSection = document.querySelector('section.skill');
-skills.initList('db/skills.json', skillList, skillSection);
+const skillListSelector = document.querySelector('dl.skill-list');
+const skilSectionSelector = document.querySelector('section.skill');
+skills.initList('db/skills.json', skillListSelector, skilSectionSelector);
 
 const nav = document.querySelector('.main-nav');
 const btn = document.querySelector('.nav-btn');
