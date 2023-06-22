@@ -54,7 +54,7 @@ const skills = {
             this.data.reverse();
             console.log('инвертировали порядок сортировки');
         }
-        this.generateList(skillList);
+        this.generateList(skillListSelector);
     },
 };
 
